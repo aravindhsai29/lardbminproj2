@@ -31,11 +31,11 @@ class HomeController extends Controller
     {
         //   $users = User::all();
         $user = Auth::user();
-        $posts= $user->posts;
+      //  $posts= $user->posts;
 
 
 
-        return view('profile', ['posts' => $posts]);
+        //return view('profile', ['posts' => $posts]);
     }
 
 
