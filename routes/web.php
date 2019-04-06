@@ -18,14 +18,9 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/profile', 'HomeController@profile')->name('profile');
+Route::get('/about', 'PagesController@about')->name('about');
+Route::get('/contact', 'HomeController@contact')->name('contact');
 
-Route::get('/about', function () {
-    return view('pages.about');
-});
-Route::get('/contact', function () {
-    return view('pages.contact');
-});
 Route::Post('/contact', function () {
     $data =request()->all();
     echo "email :" .$data['email'] . '<br>';
@@ -33,10 +28,3 @@ Route::Post('/contact', function () {
     echo "Thank You!";
 });
 
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');

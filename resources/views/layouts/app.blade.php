@@ -77,4 +77,18 @@
         </main>
     </div>
 </body>
+
+<body>
+<div class="container">
+    <header>
+        @include('includes.menu')
+    </header>
+    <main role="main">
+        @yield('content')
+    </main>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+</div>
+</body>
 </html>
