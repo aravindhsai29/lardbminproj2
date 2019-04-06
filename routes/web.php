@@ -20,3 +20,23 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/profile', 'HomeController@profile')->name('profile');
 
+Route::get('/about', function () {
+    return view('pages.about');
+});
+Route::get('/contact', function () {
+    return view('pages.contact');
+});
+Route::Post('/contact', function () {
+    $data =request()->all();
+    echo "email :" .$data['email'] . '<br>';
+    echo "Name :"  .$data['body'].'<br>';
+    echo "Thank You!";
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
