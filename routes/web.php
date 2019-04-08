@@ -19,7 +19,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/about', 'PagesController@about')->name('about');
-Route::get('/contact', 'HomeController@contact')->name('contact');
+Route::get('/contact', 'PagesController@contact')->name('contact');
 
 Route::Post('/contact', function () {
     $data =request()->all();

@@ -81,7 +81,7 @@
 
     <div class="content">
         <div class="title m-b-md">
-            Unit testing and seeding
+            Mini project 2 cars and users
         </div>
 
 
