@@ -218,12 +218,7 @@
       <Position>8</Position>
       <DataType>datetime|0s</DataType>
     </column>
-    <index id="58" parent="13" name="users_email_unique">
-      <ColNames>email</ColNames>
-      <ColumnCollations></ColumnCollations>
-      <Unique>1</Unique>
-    </index>
-    <key id="59" parent="13">
+    <key id="58" parent="13">
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
