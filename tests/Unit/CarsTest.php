@@ -62,7 +62,7 @@ class CarsTest extends TestCase
     public function testMake()
     {
     $car = Car::inRandomOrder()->first();
-    $value=$car->make;
+    $value=$car->make
     $this->assertContains($value, ['Honda','Toyota','Ford']);
     }
     public function testString()
