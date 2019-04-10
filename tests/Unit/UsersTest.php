@@ -43,7 +43,7 @@ class UsersTest extends TestCase
     $user->name = '';
     $user->email = '';
     $user->password = '';
-    $user->save(
+    $user->save();
     $this->assertTrue($user->delete());
     }
     public function testCount()
