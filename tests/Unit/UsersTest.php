@@ -49,7 +49,7 @@ class UsersTest extends TestCase
     public function testCount()
     {
     $user = User::All();
-    $user->count='50'
+    $user->count='50';
     $this->assertEquals(50, $user->count());
     }
 }
