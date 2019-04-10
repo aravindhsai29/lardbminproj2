@@ -31,7 +31,7 @@ class UsersTest extends TestCase
     public function testUpdate()
     {
     $user = User::inRandomOrder()->first();
-    $user->name = 'Steve Smith';
+    $user->name = 'Steve Smith'
     $user->email = '';
     $user->password = '';
     $user->save();
