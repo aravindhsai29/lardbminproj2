@@ -23,8 +23,8 @@ class UsersTest extends TestCase
     public function testInsert()
     {
     $user = new User();
-    $user->name = ''
-    $user->email = ''
+    $user->name = '';
+    $user->email = '';
     $user->password = '';
     $this->assertTrue($user->save());
     }
