@@ -49,12 +49,12 @@ class CarsTest extends TestCase
     public function testCount()
     {
     $car = Car::All();
-    $car->count='50';
+    $car->count='50'
     $this->assertEquals(50, $car->count());
     }
     public function testInt()
     {
-    $car = Car::inRandomOrder()->first()
+    $car = Car::inRandomOrder()->first();
 
     $this->assertFalse(Is_Int($car->year));
 
