@@ -12,15 +12,15 @@ class registerTest extends TestCase
      *
      * @return void
      */
-    public function testBasicTest()
+    public function testregisterTest()
     {
         $response = $this->get('/register');
 
         $response->assertStatus(200);
     }
-    public function testBasicTest1()
+    public function testcontactTest()
     {
-        $response = $this->get('/register');
+        $response = $this->get('/contact');
 
         $response->assertStatus(200);
     }

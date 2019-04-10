@@ -52,22 +52,23 @@ class CarsTest extends TestCase
     $car->count='50';
     $this->assertEquals(50, $car->count());
     }
-    public function testInteger()
+    public function testInt()
     {
     $car = Car::inRandomOrder()->first();
-    $year= (int)$car->year;
-    $this->assertInternalType(IsType::TYPE_INT,$year);
+
+    $this->assertFalse(Is_Int($car->year));
+
     }
-    public function testEither()
+    public function testMake()
     {
     $car = Car::inRandomOrder()->first();
     $value=$car->make;
-    $this->assertContains($value, ['honda','toyota','ford']);
+    $this->assertContains($value, ['Honda','Toyota','Ford']);
     }
     public function testString()
     {
     $car = Car::inRandomOrder()->first();
-    $this->assertInternalType('string',$car->model);
+    $this->assertIsString($car->model);
     }
 }
-}
+

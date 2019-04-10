@@ -53,15 +53,5 @@ class UsersTest extends TestCase
     $this->assertEquals(50, $user->count());
     }
 }
-$user = User::All();
-$userCount = $user->count();
-$this->assertInternalType(IsType::TYPE_INT, $userCount);
-$user = User::inRandomOrder()->first();
-dd($user);
-$this->assertInternalType('int' ,$user->id);
-$this->assertInstanceOf('App\User' ,$user);   //clas path for App
-$user = new User();
-$user->name = $request->name;
-$user->save();
 
-}
+
