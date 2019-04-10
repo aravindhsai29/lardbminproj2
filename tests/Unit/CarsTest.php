@@ -42,8 +42,8 @@ class CarsTest extends TestCase
     $car = Car::inRandomOrder()->first();
     $car->make = '';
     $car->model = '';
-    $car->year = ''
-    $car->save()
+    $car->year = '';
+    $car->save();
     $this->assertTrue($car->delete());
     }
     public function testCount()
